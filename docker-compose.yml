@@ -1,7 +1,7 @@
 services:
   sample-book-app-dev:
     build: .
-    image: mtararujs/sample-book-app
+    image: aceskaemilija/sample-book-app
     container_name: sample-book-app-dev
     ports:
       - 1010:1050
@@ -9,7 +9,7 @@ services:
       - sample-book-app-network-compose
   sample-book-app-stg:
     build: .
-    image: mtararujs/sample-book-app
+    image: aceskaemilija/sample-book-app
     container_name: sample-book-app-stg
     ports:
       - 2020:1050
@@ -17,7 +17,7 @@ services:
       - sample-book-app-network-compose
   sample-book-app-prd:
     build: .
-    image: mtararujs/sample-book-app
+    image: aceskaemilija/sample-book-app
     container_name: sample-book-app-prd
     ports:
       - 3030:1050
