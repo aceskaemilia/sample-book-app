@@ -41,10 +41,10 @@ pipeline {
 
 def buildApp(){
     echo "Building of node application is starting.."
-    sh "docker build -t mtararujs/sample-book-app ."
+    sh "docker build -t aceskaemilija/sample-book-app ."
 
     echo "Pushing image to docker registry.."
-    sh "docker push mtararujs/sample-book-app"
+    sh "docker push aceskaemilija/sample-book-app"
 }
 
 def deploy(String environment){
