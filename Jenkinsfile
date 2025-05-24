@@ -66,4 +66,5 @@ def test(String environment){
     def directory = pwd()
     sh "docker run --rm --network=sample-book-app-network-compose -v '${directory}':/api-tests/mochawesome-report aceskaemilija/api-tests run BOOKS BOOKS_${environment}"
     sh "ls"
+    archiveArtifacts allowEmptyArchive: true, artifacts: 'mochawesome.json', followSymlinks: false
 }
